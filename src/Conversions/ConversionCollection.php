@@ -2,12 +2,12 @@
 
 namespace Cedvict\MediaLibrary\Conversions;
 
-use Illuminate\Database\Eloquent\Relations\Relation;
-use Illuminate\Support\Arr;
-use Illuminate\Support\Collection;
 use Cedvict\Image\Manipulations;
 use Cedvict\MediaLibrary\MediaCollections\Exceptions\InvalidConversion;
 use Cedvict\MediaLibrary\MediaCollections\Models\Media;
+use Illuminate\Database\Eloquent\Relations\Relation;
+use Illuminate\Support\Arr;
+use Illuminate\Support\Collection;
 
 class ConversionCollection extends Collection
 {

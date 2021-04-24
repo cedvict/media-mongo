@@ -2,10 +2,10 @@
 
 namespace Cedvict\MediaLibrary\Conversions\ImageGenerators;
 
+use Cedvict\MediaLibrary\Conversions\Conversion;
 use FFMpeg\Coordinate\TimeCode;
 use FFMpeg\FFMpeg;
 use Illuminate\Support\Collection;
-use Cedvict\MediaLibrary\Conversions\Conversion;
 
 class Video extends ImageGenerator
 {

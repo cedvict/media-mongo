@@ -2,8 +2,8 @@
 
 namespace Cedvict\MediaLibrary\MediaCollections\Exceptions;
 
-use Exception;
 use Cedvict\MediaLibrary\MediaCollections\Models\Media;
+use Exception;
 
 class MediaCannotBeUpdated extends Exception
 {

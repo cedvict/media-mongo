@@ -2,8 +2,8 @@
 
 namespace Cedvict\MediaLibrary\Support;
 
-use Illuminate\Support\Str;
 use Cedvict\TemporaryDirectory\TemporaryDirectory as BaseTemporaryDirectory;
+use Illuminate\Support\Str;
 
 class TemporaryDirectory
 {

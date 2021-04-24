@@ -2,15 +2,6 @@
 
 namespace Cedvict\MediaLibrary;
 
-use DateTimeInterface;
-use Illuminate\Database\Eloquent\Relations\MorphMany;
-use Illuminate\Database\Eloquent\SoftDeletes;
-use Illuminate\Http\File;
-use Illuminate\Http\Request;
-use Illuminate\Support\Arr;
-use Illuminate\Support\Collection;
-use Illuminate\Support\Facades\Validator;
-use Illuminate\Support\Str;
 use Cedvict\MediaLibrary\Conversions\Conversion;
 use Cedvict\MediaLibrary\Downloaders\DefaultDownloader;
 use Cedvict\MediaLibrary\MediaCollections\Events\CollectionHasBeenCleared;
@@ -26,6 +17,15 @@ use Cedvict\MediaLibrary\MediaCollections\MediaRepository;
 use Cedvict\MediaLibrary\MediaCollections\Models\Media;
 use Cedvict\MediaLibrary\Support\MediaLibraryPro;
 use Cedvict\MediaLibraryPro\PendingMediaLibraryRequestHandler;
+use DateTimeInterface;
+use Illuminate\Database\Eloquent\Relations\MorphMany;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Http\File;
+use Illuminate\Http\Request;
+use Illuminate\Support\Arr;
+use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Str;
 
 trait InteractsWithMedia
 {

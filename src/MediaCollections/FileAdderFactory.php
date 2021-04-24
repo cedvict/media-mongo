@@ -2,11 +2,11 @@
 
 namespace Cedvict\MediaLibrary\MediaCollections;
 
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Collection;
 use Cedvict\MediaLibrary\MediaCollections\Exceptions\RequestDoesNotHaveFile;
 use Cedvict\MediaLibrary\Support\RemoteFile;
 use Cedvict\MediaLibraryPro\Dto\PendingMediaItem;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Collection;
 
 class FileAdderFactory
 {

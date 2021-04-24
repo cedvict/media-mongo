@@ -2,8 +2,8 @@
 
 namespace Cedvict\MediaLibrary\MediaCollections\Exceptions;
 
-use Exception;
 use Cedvict\MediaLibrary\Support\UrlGenerator\UrlGenerator;
+use Exception;
 
 class InvalidUrlGenerator extends Exception
 {

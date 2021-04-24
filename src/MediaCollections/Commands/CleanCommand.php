@@ -2,11 +2,6 @@
 
 namespace Cedvict\MediaLibrary\MediaCollections\Commands;
 
-use Illuminate\Console\Command;
-use Illuminate\Console\ConfirmableTrait;
-use Illuminate\Contracts\Filesystem\Factory;
-use Illuminate\Database\Eloquent\Collection;
-use Illuminate\Support\Str;
 use Cedvict\MediaLibrary\Conversions\Conversion;
 use Cedvict\MediaLibrary\Conversions\ConversionCollection;
 use Cedvict\MediaLibrary\Conversions\FileManipulator;
@@ -15,6 +10,11 @@ use Cedvict\MediaLibrary\MediaCollections\MediaRepository;
 use Cedvict\MediaLibrary\MediaCollections\Models\Media;
 use Cedvict\MediaLibrary\ResponsiveImages\RegisteredResponsiveImages;
 use Cedvict\MediaLibrary\Support\PathGenerator\DefaultPathGenerator;
+use Illuminate\Console\Command;
+use Illuminate\Console\ConfirmableTrait;
+use Illuminate\Contracts\Filesystem\Factory;
+use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Support\Str;
 
 class CleanCommand extends Command
 {

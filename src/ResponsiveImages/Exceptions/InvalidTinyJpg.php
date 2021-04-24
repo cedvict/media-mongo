@@ -2,8 +2,8 @@
 
 namespace Cedvict\MediaLibrary\ResponsiveImages\Exceptions;
 
-use Exception;
 use Cedvict\MediaLibrary\Support\File;
+use Exception;
 
 class InvalidTinyJpg extends Exception
 {

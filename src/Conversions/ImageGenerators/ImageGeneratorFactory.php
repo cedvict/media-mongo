@@ -2,8 +2,8 @@
 
 namespace Cedvict\MediaLibrary\Conversions\ImageGenerators;
 
-use Illuminate\Support\Collection;
 use Cedvict\MediaLibrary\MediaCollections\Models\Media;
+use Illuminate\Support\Collection;
 
 class ImageGeneratorFactory
 {

@@ -2,7 +2,6 @@
 
 namespace Cedvict\MediaLibrary\ResponsiveImages;
 
-use Illuminate\Support\Str;
 use Cedvict\MediaLibrary\Conversions\Conversion;
 use Cedvict\MediaLibrary\MediaCollections\Filesystem;
 use Cedvict\MediaLibrary\MediaCollections\Models\Media;
@@ -15,6 +14,7 @@ use Cedvict\MediaLibrary\Support\FileNamer\FileNamer;
 use Cedvict\MediaLibrary\Support\ImageFactory;
 use Cedvict\MediaLibrary\Support\TemporaryDirectory;
 use Cedvict\TemporaryDirectory\TemporaryDirectory as BaseTemporaryDirectory;
+use Illuminate\Support\Str;
 
 class ResponsiveImageGenerator
 {

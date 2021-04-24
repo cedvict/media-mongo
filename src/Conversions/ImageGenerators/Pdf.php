@@ -2,8 +2,8 @@
 
 namespace Cedvict\MediaLibrary\Conversions\ImageGenerators;
 
-use Illuminate\Support\Collection;
 use Cedvict\MediaLibrary\Conversions\Conversion;
+use Illuminate\Support\Collection;
 
 class Pdf extends ImageGenerator
 {

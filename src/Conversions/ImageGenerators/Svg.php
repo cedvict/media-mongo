@@ -2,10 +2,10 @@
 
 namespace Cedvict\MediaLibrary\Conversions\ImageGenerators;
 
+use Cedvict\MediaLibrary\Conversions\Conversion;
 use Illuminate\Support\Collection;
 use Imagick;
 use ImagickPixel;
-use Cedvict\MediaLibrary\Conversions\Conversion;
 
 class Svg extends ImageGenerator
 {

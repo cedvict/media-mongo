@@ -2,15 +2,6 @@
 
 namespace Cedvict\MediaLibrary\MediaCollections\Models;
 
-use DateTimeInterface;
-use Illuminate\Contracts\Support\Htmlable;
-use Illuminate\Contracts\Support\Responsable;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Database\Eloquent\Relations\MorphTo;
-use Illuminate\Support\Arr;
-use Illuminate\Support\Collection;
 use Cedvict\MediaLibrary\Conversions\Conversion;
 use Cedvict\MediaLibrary\Conversions\ConversionCollection;
 use Cedvict\MediaLibrary\Conversions\ImageGenerators\ImageGeneratorFactory;
@@ -27,6 +18,15 @@ use Cedvict\MediaLibrary\Support\MediaLibraryPro;
 use Cedvict\MediaLibrary\Support\TemporaryDirectory;
 use Cedvict\MediaLibrary\Support\UrlGenerator\UrlGeneratorFactory;
 use Cedvict\MediaLibraryPro\Models\TemporaryUpload;
+use DateTimeInterface;
+use Illuminate\Contracts\Support\Htmlable;
+use Illuminate\Contracts\Support\Responsable;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\MorphTo;
+use Illuminate\Support\Arr;
+use Illuminate\Support\Collection;
 
 class Media extends Model implements Responsable, Htmlable
 {

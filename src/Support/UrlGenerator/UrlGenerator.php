@@ -2,10 +2,10 @@
 
 namespace Cedvict\MediaLibrary\Support\UrlGenerator;
 
-use DateTimeInterface;
 use Cedvict\MediaLibrary\Conversions\Conversion;
 use Cedvict\MediaLibrary\MediaCollections\Models\Media;
 use Cedvict\MediaLibrary\Support\PathGenerator\PathGenerator;
+use DateTimeInterface;
 
 interface UrlGenerator
 {

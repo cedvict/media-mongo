@@ -2,8 +2,8 @@
 
 namespace Cedvict\MediaLibrary\ResponsiveImages\Events;
 
-use Illuminate\Queue\SerializesModels;
 use Cedvict\MediaLibrary\MediaCollections\Models\Media;
+use Illuminate\Queue\SerializesModels;
 
 class ResponsiveImagesGenerated
 {

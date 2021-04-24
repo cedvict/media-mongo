@@ -2,12 +2,12 @@
 
 namespace Cedvict\MediaLibrary\ResponsiveImages\Jobs;
 
+use Cedvict\MediaLibrary\MediaCollections\Models\Media;
+use Cedvict\MediaLibrary\ResponsiveImages\ResponsiveImageGenerator;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
-use Cedvict\MediaLibrary\MediaCollections\Models\Media;
-use Cedvict\MediaLibrary\ResponsiveImages\ResponsiveImageGenerator;
 
 class GenerateResponsiveImagesJob implements ShouldQueue
 {

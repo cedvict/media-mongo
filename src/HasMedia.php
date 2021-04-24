@@ -2,11 +2,11 @@
 
 namespace Cedvict\MediaLibrary;
 
-use Illuminate\Database\Eloquent\Relations\MorphMany;
-use Illuminate\Support\Collection;
 use Cedvict\MediaLibrary\Conversions\Conversion;
 use Cedvict\MediaLibrary\MediaCollections\FileAdder;
 use Cedvict\MediaLibrary\MediaCollections\Models\Media;
+use Illuminate\Database\Eloquent\Relations\MorphMany;
+use Illuminate\Support\Collection;
 
 interface HasMedia
 {
