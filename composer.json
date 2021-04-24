@@ -1,9 +1,12 @@
 {
-    "name": "Cedvict/laravel-medialibrary",
+    "name": "cedvict/media-mongo",
     "description": "Associate files with Eloquent models",
     "keywords": [
         "Cedvict",
         "laravel-medialibrary",
+        "medialibrary",
+        "media-mongo",
+        "mongodb",
         "media",
         "conversion",
         "images",
