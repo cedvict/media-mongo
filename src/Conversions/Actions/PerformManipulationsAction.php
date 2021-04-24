@@ -2,11 +2,11 @@
 
 namespace Cedvict\MediaLibrary\Conversions\Actions;
 
-use Illuminate\Support\Facades\File;
-use Illuminate\Support\Str;
 use Cedvict\MediaLibrary\Conversions\Conversion;
 use Cedvict\MediaLibrary\MediaCollections\Models\Media;
 use Cedvict\MediaLibrary\Support\ImageFactory;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Str;
 
 class PerformManipulationsAction
 {

@@ -2,15 +2,15 @@
 
 namespace Cedvict\MediaLibrary\Conversions\Commands;
 
+use Cedvict\MediaLibrary\Conversions\FileManipulator;
+use Cedvict\MediaLibrary\MediaCollections\MediaRepository;
+use Cedvict\MediaLibrary\MediaCollections\Models\Media;
 use Exception;
 use Illuminate\Console\Command;
 use Illuminate\Console\ConfirmableTrait;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
-use Cedvict\MediaLibrary\Conversions\FileManipulator;
-use Cedvict\MediaLibrary\MediaCollections\MediaRepository;
-use Cedvict\MediaLibrary\MediaCollections\Models\Media;
 
 class RegenerateCommand extends Command
 {

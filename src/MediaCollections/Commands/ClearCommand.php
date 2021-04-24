@@ -2,11 +2,11 @@
 
 namespace Cedvict\MediaLibrary\MediaCollections\Commands;
 
+use Cedvict\MediaLibrary\MediaCollections\MediaRepository;
+use Cedvict\MediaLibrary\MediaCollections\Models\Media;
 use Illuminate\Console\Command;
 use Illuminate\Console\ConfirmableTrait;
 use Illuminate\Database\Eloquent\Collection;
-use Cedvict\MediaLibrary\MediaCollections\MediaRepository;
-use Cedvict\MediaLibrary\MediaCollections\Models\Media;
 
 class ClearCommand extends Command
 {

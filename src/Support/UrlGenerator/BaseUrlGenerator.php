@@ -2,12 +2,12 @@
 
 namespace Cedvict\MediaLibrary\Support\UrlGenerator;
 
-use Illuminate\Contracts\Config\Repository as Config;
-use Illuminate\Contracts\Filesystem\Filesystem;
-use Illuminate\Support\Facades\Storage;
 use Cedvict\MediaLibrary\Conversions\Conversion;
 use Cedvict\MediaLibrary\MediaCollections\Models\Media;
 use Cedvict\MediaLibrary\Support\PathGenerator\PathGenerator;
+use Illuminate\Contracts\Config\Repository as Config;
+use Illuminate\Contracts\Filesystem\Filesystem;
+use Illuminate\Support\Facades\Storage;
 
 abstract class BaseUrlGenerator implements UrlGenerator
 {

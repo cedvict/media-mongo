@@ -2,8 +2,8 @@
 
 namespace Cedvict\MediaLibrary\ResponsiveImages\WidthCalculator;
 
-use Illuminate\Support\Collection;
 use Cedvict\MediaLibrary\Support\ImageFactory;
+use Illuminate\Support\Collection;
 
 class FileSizeOptimizedWidthCalculator implements WidthCalculator
 {

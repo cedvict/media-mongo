@@ -2,9 +2,9 @@
 
 namespace Cedvict\MediaLibrary\MediaCollections\Models\Collections;
 
+use Cedvict\MediaLibrary\MediaCollections\Models\Media;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Database\Eloquent\Collection;
-use Cedvict\MediaLibrary\MediaCollections\Models\Media;
 
 class MediaCollection extends Collection implements Htmlable
 {

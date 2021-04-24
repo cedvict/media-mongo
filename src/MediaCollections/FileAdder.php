@@ -2,10 +2,6 @@
 
 namespace Cedvict\MediaLibrary\MediaCollections;
 
-use Closure;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Facades\Storage;
-use Illuminate\Support\Traits\Macroable;
 use Cedvict\MediaLibrary\Conversions\ImageGenerators\Image as ImageGenerator;
 use Cedvict\MediaLibrary\HasMedia;
 use Cedvict\MediaLibrary\MediaCollections\Exceptions\DiskDoesNotExist;
@@ -19,6 +15,10 @@ use Cedvict\MediaLibrary\ResponsiveImages\Jobs\GenerateResponsiveImagesJob;
 use Cedvict\MediaLibrary\Support\File;
 use Cedvict\MediaLibrary\Support\RemoteFile;
 use Cedvict\MediaLibraryPro\Models\TemporaryUpload;
+use Closure;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Traits\Macroable;
 use Symfony\Component\HttpFoundation\File\File as SymfonyFile;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 

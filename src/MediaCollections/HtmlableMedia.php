@@ -2,10 +2,10 @@
 
 namespace Cedvict\MediaLibrary\MediaCollections;
 
-use Illuminate\Contracts\Support\Htmlable;
 use Cedvict\MediaLibrary\Conversions\ConversionCollection;
 use Cedvict\MediaLibrary\Conversions\ImageGenerators\Image;
 use Cedvict\MediaLibrary\MediaCollections\Models\Media;
+use Illuminate\Contracts\Support\Htmlable;
 
 class HtmlableMedia implements Htmlable
 {

@@ -2,8 +2,8 @@
 
 namespace Cedvict\MediaLibrary\MediaCollections\Exceptions;
 
-use Exception;
 use Cedvict\MediaLibrary\Support\PathGenerator\PathGenerator;
+use Exception;
 
 class InvalidPathGenerator extends Exception
 {

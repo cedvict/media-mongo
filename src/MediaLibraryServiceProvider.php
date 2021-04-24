@@ -2,7 +2,6 @@
 
 namespace Cedvict\MediaLibrary;
 
-use Illuminate\Support\ServiceProvider;
 use Cedvict\MediaLibrary\Conversions\Commands\RegenerateCommand;
 use Cedvict\MediaLibrary\MediaCollections\Commands\CleanCommand;
 use Cedvict\MediaLibrary\MediaCollections\Commands\ClearCommand;
@@ -11,6 +10,7 @@ use Cedvict\MediaLibrary\MediaCollections\MediaRepository;
 use Cedvict\MediaLibrary\MediaCollections\Models\Observers\MediaObserver;
 use Cedvict\MediaLibrary\ResponsiveImages\TinyPlaceholderGenerator\TinyPlaceholderGenerator;
 use Cedvict\MediaLibrary\ResponsiveImages\WidthCalculator\WidthCalculator;
+use Illuminate\Support\ServiceProvider;
 
 class MediaLibraryServiceProvider extends ServiceProvider
 {

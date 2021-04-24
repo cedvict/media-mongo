@@ -2,9 +2,9 @@
 
 namespace Cedvict\MediaLibrary\Conversions\Events;
 
-use Illuminate\Queue\SerializesModels;
 use Cedvict\MediaLibrary\Conversions\Conversion;
 use Cedvict\MediaLibrary\MediaCollections\Models\Media;
+use Illuminate\Queue\SerializesModels;
 
 class ConversionWillStart
 {

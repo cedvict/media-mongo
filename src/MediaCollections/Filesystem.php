@@ -2,10 +2,6 @@
 
 namespace Cedvict\MediaLibrary\MediaCollections;
 
-use Exception;
-use Illuminate\Contracts\Filesystem\Factory;
-use Illuminate\Support\Facades\Storage;
-use Illuminate\Support\Str;
 use Cedvict\MediaLibrary\Conversions\ConversionCollection;
 use Cedvict\MediaLibrary\Conversions\FileManipulator;
 use Cedvict\MediaLibrary\MediaCollections\Events\MediaHasBeenAdded;
@@ -13,6 +9,10 @@ use Cedvict\MediaLibrary\MediaCollections\Models\Media;
 use Cedvict\MediaLibrary\Support\File;
 use Cedvict\MediaLibrary\Support\PathGenerator\PathGeneratorFactory;
 use Cedvict\MediaLibrary\Support\RemoteFile;
+use Exception;
+use Illuminate\Contracts\Filesystem\Factory;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 
 class Filesystem
 {

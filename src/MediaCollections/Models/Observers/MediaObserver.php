@@ -2,11 +2,11 @@
 
 namespace Cedvict\MediaLibrary\MediaCollections\Models\Observers;
 
-use Illuminate\Database\Eloquent\SoftDeletes;
-use Illuminate\Foundation\Application;
 use Cedvict\MediaLibrary\Conversions\FileManipulator;
 use Cedvict\MediaLibrary\MediaCollections\Filesystem;
 use Cedvict\MediaLibrary\MediaCollections\Models\Media;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Foundation\Application;
 
 class MediaObserver
 {

@@ -2,8 +2,8 @@
 
 namespace Cedvict\MediaLibrary\MediaCollections\Events;
 
-use Illuminate\Queue\SerializesModels;
 use Cedvict\MediaLibrary\HasMedia;
+use Illuminate\Queue\SerializesModels;
 
 class CollectionHasBeenCleared
 {

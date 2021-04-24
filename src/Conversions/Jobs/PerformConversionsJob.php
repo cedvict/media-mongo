@@ -2,13 +2,13 @@
 
 namespace Cedvict\MediaLibrary\Conversions\Jobs;
 
+use Cedvict\MediaLibrary\Conversions\ConversionCollection;
+use Cedvict\MediaLibrary\Conversions\FileManipulator;
+use Cedvict\MediaLibrary\MediaCollections\Models\Media;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
-use Cedvict\MediaLibrary\Conversions\ConversionCollection;
-use Cedvict\MediaLibrary\Conversions\FileManipulator;
-use Cedvict\MediaLibrary\MediaCollections\Models\Media;
 
 class PerformConversionsJob implements ShouldQueue
 {
