@@ -7,7 +7,7 @@ use Cedvict\MediaLibrary\MediaCollections\Models\Media;
 use Closure;
 use Illuminate\Database\Eloquent\Collection as DbCollection;
 use Illuminate\Support\Arr;
-use Illuminate\Support\Collection;
+use Jenssegers\Mongodb\Collection;
 
 class MediaRepository
 {
@@ -25,7 +25,7 @@ class MediaRepository
      * @param string $collectionName
      * @param array|callable $filter
      *
-     * @return \Illuminate\Support\Collection
+     * @return \Jenssegers\Mongodb\Collection
      */
     public function getCollection(HasMedia $model, string $collectionName, $filter = []): Collection
     {
@@ -35,10 +35,10 @@ class MediaRepository
     /**
      * Apply given filters on media.
      *
-     * @param \Illuminate\Support\Collection $media
+     * @param \Jenssegers\Mongodb\Collection $media
      * @param array|callable $filter
      *
-     * @return \Illuminate\Support\Collection
+     * @return \Jenssegers\Mongodb\Collection
      */
     protected function applyFilterToMediaCollection(Collection $media, $filter): Collection
     {
