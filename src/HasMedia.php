@@ -7,6 +7,7 @@ use Cedvict\MediaLibrary\MediaCollections\FileAdder;
 use Cedvict\MediaLibrary\MediaCollections\Models\Media;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Jenssegers\Mongodb\Collection;
+use Cedvict\MediaLibrary\MediaCollections\Models\Collections\MediaCollection as MediaCollectionModel;
 
 interface HasMedia
 {
@@ -38,9 +39,9 @@ interface HasMedia
      * @param string         $collectionName
      * @param array|callable $filters
      *
-     * @return \Jenssegers\Mongodb\Collection
+     * @return MediaCollectionModel
      */
-    public function getMedia(string $collectionName = 'default', $filters = []): Collection;
+    public function getMedia(string $collectionName = 'default', $filters = []): MediaCollectionModel;
 
     public function clearMediaCollection(string $collectionName = 'default'): HasMedia;
 
