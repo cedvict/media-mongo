@@ -5,9 +5,9 @@ namespace Cedvict\MediaLibrary\MediaCollections;
 use Cedvict\MediaLibrary\HasMedia;
 use Cedvict\MediaLibrary\MediaCollections\Models\Media;
 use Closure;
-use Illuminate\Database\Eloquent\Collection as DbCollection;
+use Jenssegers\Mongodb\Collection as DbCollection;
 use Illuminate\Support\Arr;
-use Jenssegers\Mongodb\Collection;
+use Illuminate\Support\Collection;
 
 class MediaRepository
 {
@@ -25,7 +25,7 @@ class MediaRepository
      * @param string $collectionName
      * @param array|callable $filter
      *
-     * @return \Jenssegers\Mongodb\Collection
+     * @return \Illuminate\Support\Collection
      */
     public function getCollection(HasMedia $model, string $collectionName, $filter = []): Collection
     {
@@ -35,10 +35,10 @@ class MediaRepository
     /**
      * Apply given filters on media.
      *
-     * @param \Jenssegers\Mongodb\Collection $media
+     * @param \Illuminate\Support\Collection $media
      * @param array|callable $filter
      *
-     * @return \Jenssegers\Mongodb\Collection
+     * @return \Illuminate\Support\Collection
      */
     protected function applyFilterToMediaCollection(Collection $media, $filter): Collection
     {
