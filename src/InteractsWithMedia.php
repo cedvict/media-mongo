@@ -13,6 +13,7 @@ use Cedvict\MediaLibrary\MediaCollections\Exceptions\MimeTypeNotAllowed;
 use Cedvict\MediaLibrary\MediaCollections\FileAdder;
 use Cedvict\MediaLibrary\MediaCollections\FileAdderFactory;
 use Cedvict\MediaLibrary\MediaCollections\MediaCollection;
+use Cedvict\MediaLibrary\MediaCollections\Models\Collections\MediaCollection as MediaCollectionModel;
 use Cedvict\MediaLibrary\MediaCollections\MediaRepository;
 use Cedvict\MediaLibrary\MediaCollections\Models\Media;
 use Cedvict\MediaLibrary\Support\MediaLibraryPro;
@@ -283,9 +284,9 @@ trait InteractsWithMedia
      * @param string $collectionName
      * @param array|callable $filters
      *
-     * @return MediaCollections\Models\Collections\MediaCollection
+     * @return MediaCollectionModel
      */
-    public function getMedia(string $collectionName = 'default', $filters = []): MediaCollections\Models\Collections\MediaCollection
+    public function getMedia(string $collectionName = 'default', $filters = []): MediaCollectionModel
     {
         return app(MediaRepository::class)
             ->getCollection($this, $collectionName, $filters)
@@ -558,7 +559,7 @@ trait InteractsWithMedia
             ? $this->media
             : collect($this->unAttachedMediaLibraryItems)->pluck('media');
 
-        $collection = new MediaCollections\Models\Collections\MediaCollection($collection);
+        $collection = new MediaCollectionModel($collection);
 
         return $collection
             ->filter(fn (Media $mediaItem) => $mediaItem->collection_name === $collectionName)

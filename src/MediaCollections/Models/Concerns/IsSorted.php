@@ -2,7 +2,7 @@
 
 namespace Cedvict\MediaLibrary\MediaCollections\Models\Concerns;
 
-use Illuminate\Database\Eloquent\Builder;
+use Jenssegers\Mongodb\Eloquent\Builder;
 
 trait IsSorted
 {
