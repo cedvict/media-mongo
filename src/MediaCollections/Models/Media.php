@@ -21,12 +21,12 @@ use Cedvict\MediaLibraryPro\Models\TemporaryUpload;
 use DateTimeInterface;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Contracts\Support\Responsable;
+use Illuminate\Support\Arr;
+use Illuminate\Support\Collection;
 use Jenssegers\Mongodb\Eloquent\Builder;
 use Jenssegers\Mongodb\Eloquent\Model;
 use Jenssegers\Mongodb\Relations\BelongsTo;
 use Jenssegers\Mongodb\Relations\MorphTo;
-use Illuminate\Support\Arr;
-use Illuminate\Support\Collection;
 
 class Media extends Model implements Responsable, Htmlable
 {
