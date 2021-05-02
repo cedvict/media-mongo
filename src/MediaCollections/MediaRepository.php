@@ -5,9 +5,9 @@ namespace Cedvict\MediaLibrary\MediaCollections;
 use Cedvict\MediaLibrary\HasMedia;
 use Cedvict\MediaLibrary\MediaCollections\Models\Media;
 use Closure;
-use Jenssegers\Mongodb\Collection as DbCollection;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
+use Jenssegers\Mongodb\Collection as DbCollection;
 
 class MediaRepository
 {
