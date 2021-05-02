@@ -7,7 +7,7 @@ use Cedvict\MediaLibrary\MediaCollections\FileAdder;
 use Cedvict\MediaLibrary\MediaCollections\Models\Collections\MediaCollection as MediaCollectionModel;
 use Cedvict\MediaLibrary\MediaCollections\Models\Media;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
-use Jenssegers\Mongodb\Collection;
+use Illumante\Support\Collection;
 
 interface HasMedia
 {
