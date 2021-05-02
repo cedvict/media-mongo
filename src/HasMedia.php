@@ -6,8 +6,8 @@ use Cedvict\MediaLibrary\Conversions\Conversion;
 use Cedvict\MediaLibrary\MediaCollections\FileAdder;
 use Cedvict\MediaLibrary\MediaCollections\Models\Collections\MediaCollection as MediaCollectionModel;
 use Cedvict\MediaLibrary\MediaCollections\Models\Media;
-use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illumante\Support\Collection;
+use Illuminate\Database\Eloquent\Relations\MorphMany;
 
 interface HasMedia
 {
